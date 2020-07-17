@@ -59,6 +59,7 @@
 									<a href="userLoginForm">로그인</a>
 								</c:if>
 								<a href="userJoinForm">회원가입</a>
+								<a href="readRequest">신청서 확인</a>
 							</div>
 						</div>
 					</div>
@@ -148,7 +149,7 @@
 											
 										</div></li>
 									<li><a href="#">입양 후 소식</a></li>
-									<li><a href="#">분양 신청</a></li>
+									<li><a href="adoptRequest">분양 신청</a></li>
 									<li><a href="#contact">문의하기</a></li>
 								</ul>
 
@@ -174,5 +175,3 @@
 		</div>
 	</div>
 	<!-- ##### Breadcrumb Area End ##### -->
-	</body>
-	</html>
