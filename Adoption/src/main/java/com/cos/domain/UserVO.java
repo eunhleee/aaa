@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 public class UserVO {
-	private String userID;
-	private String userPW;
-	private String userName;
-	private String userEmail;
-	private boolean userEmailCheck;
-	private String userSalt;
+	private String id;
+	private String name;
+	private String pw;
+	private String email;
+	private String phone;
+	private int grade;
 	
 }

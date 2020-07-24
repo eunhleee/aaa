@@ -1,5 +1,7 @@
 package com.cos.persistence;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -27,5 +29,30 @@ public class UserDAOImpl implements UserDAO{
 	public int login(UserVO user) throws Exception {
 		return session.selectOne(namespace+".login", user);
 	}
-
+	@Override
+	public int update(UserVO user) throws Exception {
+		// TODO Auto-generated method stub
+		return session.update(namespace+".update",user);
+	}
+	@Override
+	public void delete(String id) throws Exception {
+		// TODO Auto-generated method stub
+		session.delete(namespace+".delete",id);
+	}
+	@Override
+	public String findid(String email) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace+".findid",email);
+	}
+	@Override
+	public int findpw(UserVO user) throws Exception {
+		// TODO Auto-generated method stub
+		return session.selectOne(namespace+".findpw",user);
+	}
+	@Override
+	public void newpw(UserVO user) throws Exception {
+		// TODO Auto-generated method stub
+		session.update(namespace+".newpw",user);
+	}
+	
 }

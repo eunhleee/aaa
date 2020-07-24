@@ -6,6 +6,7 @@ import lombok.Data;
 
 public class RequestDTO {
 	private int num;
+	private String id;
 	private String name;
 	private String regdate;
 	private String kind;

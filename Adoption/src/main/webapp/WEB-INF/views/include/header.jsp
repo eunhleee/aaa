@@ -18,6 +18,7 @@
 
 <!-- Core Stylesheet -->
 <link rel="stylesheet" href="resources/css/style.css">
+
 </head>
 
 <body>
@@ -54,12 +55,15 @@
 							<div class="top-social-info">
 								<c:if test="${sessionScope.userID!=null }">
 									<a href="userLogout">로그아웃(${sessionScope.userID})</a>
+									<a href="myPage">마이페이지</a>
 								</c:if>
 								<c:if test="${sessionScope.userID==null }">
 									<a href="userLoginForm">로그인</a>
+									<a href="userJoinForm">회원가입</a>
 								</c:if>
-								<a href="userJoinForm">회원가입</a>
-								<a href="readRequest">신청서 확인</a>
+								<c:if test="${sessionScope.userGrade eq 0 }">
+								<a href="requestList">신청서 확인</a>
+								</c:if>
 							</div>
 						</div>
 					</div>
@@ -73,7 +77,7 @@
 				<div class="row">
 					<div class="col-12">
 						<!-- Nav brand -->
-						<a href="index" class="nav-brand"><img src="resources/img/core-img/logo.jpg" alt=""></a>
+						<a href="index" class="nav-brand"><img src="resources/img/core-img/logo.png" alt="" width="100" height="100"></a>
 					</div>
 				</div>
 			</div>
@@ -168,7 +172,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<img src="resources/img/core-img/breadcrumb-line.png" alt="">
+					<img src="resources/img/core-img/grass.JPG" alt="">
 					
 				</div>
 			</div>

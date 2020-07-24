@@ -55,10 +55,15 @@
 												</div>
 											</div>
 											<div class="col-12">
+												<c:if test="${not empty sessionScope.userID}">
 												<button type="submit" class="btn foode-btn">Send</button>
+												</c:if>
+												<c:if test="${empty sessionScope.userID}">
+												<p>로그인한 후 이용 가능합니다.</p>
+												</c:if>
 											</div>
 										</div>
-										
+										<input type="hidden" name="id" value="${sessionScope.userID}">
 									</form>
 								</div>
 							</div>

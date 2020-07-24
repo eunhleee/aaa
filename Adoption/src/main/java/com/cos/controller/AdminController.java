@@ -32,10 +32,11 @@ public class AdminController {
 		return "admin/adminContact";
 	}
 	@RequestMapping(value = "/mailSend", method = RequestMethod.POST)
-	public String mailSend(@RequestParam("userName") String name, 
-			@RequestParam("userEmail") String fromEmail, 
-			@RequestParam("message") String text, 
-			@RequestParam("adminEmail") String toEmail, 
+	public String mailSend(@RequestParam("name") String name, 
+			@RequestParam("email") String fromEmail, 
+			@RequestParam("phone") String phone, 
+			@RequestParam("message") String message,
+			@RequestParam("adminEmail") String toEmail,
 			Model model) throws Exception{
 		final MimeMessagePreparator preparator = new MimeMessagePreparator() { 
 			@Override public void prepare(MimeMessage mimeMessage) throws Exception { 
@@ -44,10 +45,10 @@ public class AdminController {
 		helper.setFrom(fromEmail); 
 		helper.setTo(toEmail); 
 		helper.setSubject(name +" GET IN TOUCH"); 
-		helper.setText(text, true); } };
+		helper.setText(message, true); } };
 		mailSender.send(preparator);
 
-		return "redirect:adminContact";
+		return "index";
 	}
 
 }

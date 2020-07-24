@@ -7,18 +7,35 @@
 	<!-- 회원정보 -->
 	<!-- 작동하는 메소드의 이름과 id값을 동일하게 해야함 -->
 	<select id="select" resultType="com.cos.domain.UserVO">
-		SELECT * FROM user WHERE userID = #{userID}
+		SELECT * FROM member WHERE id = #{id}
 	</select>
 	<!-- 회원가입 -->
 	<insert id="insert">
-		INSERT user(userID, userPW, userName, userEmail)VALUES
-		(#{userID},#{userPW},#{userName},#{userEmail})
+		INSERT member(id, name, pw, email, phone, grade)VALUES
+		(#{id},#{name},#{pw},#{email},#{phone},1)
 	</insert>
 	<!-- 로그인 -->
 	<select id="login" resultType="java.lang.Integer">
-		SELECT COUNT(*) FROM user WHERE userID = #{userID} 
-		and userPW = #{userPW}
+		SELECT COUNT(*) FROM member WHERE id = #{id} 
+		and pw = #{pw}
 	</select>
+	<update id="update">
+		UPDATE member set id=#{id},name=#{name},pw=#{pw},email=#{email},phone=#{phone} where id=#{id}
+	</update>
+	<delete id="delete">
+		delete from member where id=#{id}
+	</delete>
+	
+	<select id="findid" resultType="java.lang.String">
+		select id from member where email=#{email}
+	</select>
+	
+	<select id="findpw" resultType="java.lang.Integer">
+		select count(*) from member where id=#{id} and email=#{email}
+	</select>
+	<update id="newpw">
+		update member set pw=#{pw} where id=#{id}
+	</update>
 </mapper>
 
 

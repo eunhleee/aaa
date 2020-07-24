@@ -72,11 +72,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/playground.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-heading">넓은 운동장</div>
+                                <div class="portfolio-caption-subheading text-muted">Playground</div>
                             </div>
                         </div>
                     </div>
@@ -86,11 +86,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/feed.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                <div class="portfolio-caption-heading">유기농 사료</div>
+                                <div class="portfolio-caption-subheading text-muted">Organic feed</div>
                             </div>
                         </div>
                     </div>
@@ -100,11 +100,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/volunteer.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-heading">자원봉사자</div>
+                                <div class="portfolio-caption-subheading text-muted">Volunteer</div>
                             </div>
                         </div>
                     </div>
@@ -114,11 +114,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/shower.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                                <div class="portfolio-caption-heading">무료 목욕 서비스</div>
+                                <div class="portfolio-caption-subheading text-muted">Free Shower Service</div>
                             </div>
                         </div>
                     </div>
@@ -128,11 +128,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/service1.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                                <div class="portfolio-caption-heading">제휴 병원 할인 서비스</div>
+                                <div class="portfolio-caption-subheading text-muted">10% Discount Diagnosis</div>
                             </div>
                         </div>
                     </div>
@@ -142,11 +142,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/06-thumbnail.jpg" alt="" />
+                                <img class="img-fluid2" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/service2.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                                <div class="portfolio-caption-heading">안락사없는 보호소</div>
+                                <div class="portfolio-caption-subheading text-muted">No euthanasia</div>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/join.png" alt=""/></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">1단계</h4>
@@ -171,7 +171,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/write2.png" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                               
@@ -183,7 +183,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/consulting.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 
@@ -193,7 +193,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/meeting.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                
@@ -203,7 +203,7 @@
                         </div>
                     </li>
                      <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/about/write.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 
@@ -253,7 +253,7 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate" action="mailSend" method="post">
+                <form id="contactForm" name="sentMessage" action="mailSend" method="post">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -271,7 +271,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" name="message" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -280,6 +280,7 @@
                         <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                     </div>
+                    <input type="hidden" name="adminEmail" value="hyangol77@gmail.com">
                 </form>
             </div>
         </section>
@@ -311,18 +312,13 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
+                                    <h2 class="text-uppercase">넓은 운동장</h2>
+                                    <p class="item-intro text-muted">Playground</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/playground.jpg" alt="" />
+                                    <p>넓은 공간에서 아이들이 스트레스 받지않고 뛰어놀 수 있도록 운동장과 사회성이 길러지는 환경에서 아이들을 보호하고 있습니다.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -341,18 +337,17 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">유기농 사료</h2>
+                                    <p class="item-intro text-muted">Organic feed</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/feed.jpg" alt="" />
+                                    <p>무엇보다 유기견/유기묘들은 거리에서 영양 부족상태로 구조가 되기 때문에 유기농 사료를 통해 부족한 영양을 안전하게 챙겨주려 노력하고 있습니다.</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
+                                        <li>사료명: ANF(에이엔에프)</li>
+                                        <li>홈페이지: <a href="https://anf.co.kr/">https://anf.co.kr/</a></li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -371,18 +366,17 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">자원봉사자</h2>
+                                    <p class="item-intro text-muted">Volunteer</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/volunteer.jpg" alt="" />
+                                    <p>매주 2번 영자네, 백의민족 유기견 자원봉사 단체에서 우리 보호소에서 궂은 일들을 도맡아해주셔서 깨끗하고 쾌적한 공간에서 아이들이 뛰어올 수 있게끔 해주시고 계십니다.</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
+                                        <li>단체 이름: 영자네, 백의민족</li>
+                                        <li>방문 요일: 화요일(영자네) 금요일(백의민족)</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -401,18 +395,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">무료 목욕 서비스</h2>
+                                    <p class="item-intro text-muted">Free Shower Service</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/shower.jpg" alt="" />
+                                    <p>처음 아이들 분양하신 분들에게 어려운 것이 아이들을 목욕시키는 것입니다. 우리 보호소는 보호사분들이 회원분들께 목욕 교육은 물론, 수업을 참여하지 못하시면 아이들을 깨끗하게 목욕 시켜드립니다!</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
+                                        <li>예약방법: 전화로 문의부탁드립니다.</li>
+                                        <li>이용시간: 12시-17시(월-금), 10시-14시(토-일)</li>
+                                        <li>이용 제한: 분양을 하신 회원분만 이용가능한 서비스 입니다.</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -431,18 +425,24 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">제휴 병원 할인 서비스</h2>
+                                    <p class="item-intro text-muted">10% Discount Diagnosis</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/service1.jpg" alt="" />
+                                    <p>우리 보호소에게 많은 도움을 주시는 스타동물병원 원장님께서 분양을 하신 분들 모두에게 진료의 10프로를 할인해드리기로 하셨습니다!! 큰 비용드는 수슬, 간단한 진료도 저렴하고 최선을 다해 치료해주십니다.</p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
+                                        <li>병원명: 스타동물병원</li>
+                                        <li>병원 위치: 부산광역시 부산진구 전포대로 170</li>
+                                        <li>병원 번호: 051-819-7588</li>
+                                        <li>
+                                        <a href="https://ko-kr.facebook.com/pages/category/Animal-Shelter/%EC%8A%A4%ED%83%80%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90-%EC%84%9C%EB%A9%B4-674373532688107/">
+                                        <img src="${pageContext.request.contextPath}/resources/assets/img/portfolio/facebook.png" width="30" height="30"></a>
+                                        <a href="https://www.instagram.com/explore/locations/1025378111/-">
+                                        <img src="${pageContext.request.contextPath}/resources/assets/img/portfolio/instagram.png" width="30" height="30"></a>
+                                        </li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -461,18 +461,13 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/06-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
-                                    </ul>
+                                    <h2 class="text-uppercase">안락사없는 보호소</h2>
+                                    <p class="item-intro text-muted">No euthanasia</p>
+                                    <img class="img-fluid d-block mx-auto" src="${pageContext.request.contextPath}/resources/assets/img/portfolio/service2.jpg" alt="" />
+                                   	 <p>우리 보호소에 오게된 아이들을 새로운 주인을 찾아갈 수 있을 때까지 이쁘고 건강하게 보호를 해줄것입니다.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
