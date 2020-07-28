@@ -96,7 +96,7 @@
 					
 					<div class="container-login100-form-btn">
 						<input type="submit" class="login100-form-btn" value="Login">
-						<input type="button" onclick="location.href='index'" class="customlogin100-form-btn2" value="Cencle">
+						<input type="button" onclick="location.href='index'" class="customlogin100-form-btn2" value="Cancel">
 					</div>
 
 				</form>
