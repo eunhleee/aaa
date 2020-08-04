@@ -2448,8 +2448,10 @@ blockquote .blockquote-text h6:last-child {
 }
 
 .readReqTable {
-	width: 50%;
+	width: 85%;
+	margin-top:30px;
 }
+
 
 .mPframe{
 	display: flex;
@@ -2470,4 +2472,59 @@ blockquote .blockquote-text h6:last-child {
 	margin-top:3%;
 }
 
+.readComment{
+	margin-bottom:20px;
+}
 
+.myComment{
+	border:none;
+	background-color:white;
+	font-size:16px;
+	width:800px;
+}
+
+.animalcategory {
+	display: grid;
+	grid-template-columns: 4fr 1fr 1fr;
+}
+.animalcategory button {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	color: #191919;
+	width: 50px;
+	height: 25px;
+	background-color: #ffffff;
+	border: 1px solid #191919;
+	border-radius: 3px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.animalcategory button.active, button:hover, button:focus {
+    color: #ffffff;
+    background-color: #191919;
+}
+.anvtable th, td {
+	padding: 4px;
+}
+.anvtable td:nth-child(even) {
+/* 	background-color:#99D9E8; */
+	border-top: 1px solid #18B6DE;
+	border-bottom: 1px solid #18B6DE;
+}
+.anvtable td:nth-child(odd) {
+	background-color:#99E8CB;
+	border-top: 1px solid #1F8A63;
+	border-bottom: 1px solid #1F8A63;
+}
+.anlhr {
+	width:100%;
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.anltext1 {
+	width:100%;
+	text-align:center;
+	font-size: 20px;
+}

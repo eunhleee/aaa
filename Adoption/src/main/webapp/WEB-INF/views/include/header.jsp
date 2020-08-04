@@ -53,6 +53,10 @@
 
 							<!-- Social Button -->
 							<div class="top-social-info">
+								<c:if test="${sessionScope.userGrade==0}">
+									<a href="animalWriteForm">분양글쓰기</a>
+									<a href="categoryWriteForm">품종추가</a>
+								</c:if>
 								<c:if test="${sessionScope.userID!=null }">
 									<a href="userLogout">로그아웃(${sessionScope.userID})</a>
 									<a href="myPage">마이페이지</a>
@@ -105,52 +109,110 @@
 								</div>
 							</div>
 
-							<!-- Nav Start -->
+						<!-- Nav Start -->
 							<div class="classynav">
 								<ul>
 									<li><a href="index">보호소 소개</a></li>
 									<li><a href="#">강아지 분양</a>
 										<div class="megamenu">
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">대형견</a></li>
+												<li><a href="animalList?kind1=1&kind2=1&kind3=all">소형견</a></li>
 												<c:forEach var="item" items="${ctg1}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=1&kind2=1&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=1&kind2=1&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">중형견</a></li>
+												<li><a href="animalList?kind1=1&kind2=2&kind3=all">중형견</a></li>
 													<c:forEach var="item" items="${ctg2}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=1&kind2=2&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=1&kind2=2&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">소형견</a></li>
+												<li><a href="animalList?kind1=1&kind2=3&kind3=all">대형견</a></li>
 													<c:forEach var="item" items="${ctg3}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=1&kind2=3&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=1&kind2=3&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
-											
+											<ul class="single-mega cn-col-4">
+												<li><a href="animalList?kind1=1&kind2=4&kind3=all">특수견 / ETC</a></li>
+											</ul>
 										</div></li>
 									<li><a href="#">고양이 분양</a><div class="megamenu">
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">대형묘</a></li>
-												<c:forEach var="item" items="${ctg1}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+												<li><a href="animalList?kind1=2&kind2=1&kind3=all">소형묘</a></li>
+												<c:forEach var="item" items="${ctg4}">
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=2&kind2=1&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=2&kind2=1&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">중형묘</a></li>
-													<c:forEach var="item" items="${ctg2}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+												<li><a href="animalList?kind1=2&kind2=2&kind3=all">중형묘</a></li>
+													<c:forEach var="item" items="${ctg5}">
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=2&kind2=2&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=2&kind2=2&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
 											<ul class="single-mega cn-col-4">
-												<li><a href="#">소형묘</a></li>
-													<c:forEach var="item" items="${ctg3}">
-													<li><a href="lectureView?ctNum=${item.ctNum}">- ${item.ctGubun2}</a></li>
+												<li><a href="animalList?kind1=2&kind2=3&kind3=all">대형묘</a></li>
+													<c:forEach var="item" items="${ctg6}">
+													<li><div class="animalcategory">
+													<a href="animalList?kind1=2&kind2=3&kind3=${item.ctGubun3}">- ${item.ctGubun3}</a>
+													<c:if test="${sessionScope.userGrade==0}">
+													<button type="button" 
+													onclick="location.href='categoryUpdateForm?kind1=2&kind2=3&kind3=${item.ctGubun3}'">
+													수정</button>
+													<button type="button" 
+													onclick="location.href='categoryDelete?ctNum=${item.ctNum}'">
+													삭제</button>
+													</c:if></div></li>
 												</c:forEach>
 											</ul>
-											
+											<ul class="single-mega cn-col-4">
+												<li><a href="animalList?kind1=2&kind2=4&kind3=all">특수묘 / etc</a></li>
+											</ul>
 										</div></li>
 									<li><a href="#">입양 후 소식</a></li>
 									<li><a href="adoptRequest">분양 신청</a></li>

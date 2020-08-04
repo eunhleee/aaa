@@ -71,6 +71,30 @@ public class ReqeustServiceImpl implements RequestService{
 		return dao.myList(id);
 	}
 
+	@Override
+	public void addComment(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		dao.addComment(dto);
+	}
+
+	@Override
+	public List<RequestDTO> selectRequestNum(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		return dao.selectRequestNum(dto);
+	}
+
+	@Override
+	public void deleteComment(int conum) {
+		// TODO Auto-generated method stub
+		dao.deleteComment(conum);
+	}
+
+	@Override
+	public void modifyComment(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		dao.modifyComment(dto);
+	}
+
 	
 
 }

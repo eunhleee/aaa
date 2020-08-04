@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cos.domain.Animal">
+	<select id="selectTitle" resultType="com.cos.domain.AnimalVO">
+		SELECT num, name FROM animal WHERE kind1 = 1 and kind2 = #{kind2}
+	</select>
+	<select id="selectTitle2" resultType="com.cos.domain.AnimalVO">
+		SELECT num, name FROM animal WHERE kind1 = 2 and kind2 = #{kind2}
+	</select>
+	<select id="selectMaxNum" resultType="com.cos.domain.AnimalVO">
+		SELECT max(num) num FROM animal
+	</select>
+	<select id="selectMinNum" resultType="com.cos.domain.AnimalVO">
+		SELECT min(num) num FROM animal WHERE kind1 = 1 and kind2 = #{kind2}
+	</select>
+	<select id="selectMinNum2" resultType="com.cos.domain.AnimalVO">
+		SELECT min(num) num FROM animal WHERE kind1 = 2 and kind2 = #{kind2}
+	</select>
+	<select id="select" resultType="com.cos.domain.AnimalVO">
+		SELECT * FROM animal WHERE num = #{num}
+	</select>
+	
+	<select id="newSelect" resultType="com.cos.domain.AnimalVO">
+		SELECT * FROM animal WHERE kind1=#{kind1} and kind2=#{kind2} and kind3=#{kind3} 
+		order by num desc LIMIT #{startList}, #{listSize}  
+	</select>
+	<select id="allSelect" resultType="com.cos.domain.AnimalVO">
+		SELECT * FROM animal WHERE kind1=#{kind1} and kind2=#{kind2} 
+		order by num desc LIMIT #{startList}, #{listSize}
+	</select>
+	<select id="count" resultType="java.lang.Integer">
+		SELECT count(*) FROM animal WHERE kind1=#{kind1} and kind2=#{kind2}
+	</select>
+	<select id="count2" resultType="java.lang.Integer">
+		SELECT count(*) FROM animal WHERE kind1=#{kind1} and kind2=#{kind2} and kind3=#{kind3}
+	</select>
+	
+	<insert id="cinsert">
+		INSERT INTO ancomment(anNum, acContent, acId, acRegdate) 
+		VALUE(#{anNum}, #{acContent}, #{acId}, now())
+	</insert>
+	<select id="cselect" resultType="com.cos.domain.AnimalVO">
+		SELECT * FROM ancomment WHERE anNum=#{anNum}
+	</select>
+	<update id="cupdate">
+		UPDATE ancomment SET acContent=#{acContent} WHERE acNum=#{acNum}
+	</update>
+	<delete id="cdelete">
+		DELETE FROM ancomment WHERE acNum=#{acNum}
+	</delete>
+	
+	<delete id="delete">
+		DELETE FROM animal WHERE num = #{num}
+	</delete>
+	<update id="update">
+		UPDATE animal SET name=#{name}, age=#{age}, gender=#{gender}, area=#{area}, 
+		protect_date=#{protect_date}, color=#{color}, kind1=#{kind1}, kind2=#{kind2}, 
+		kind3=#{kind3}, weight=#{weight}, inoculation=#{inoculation}, etc=#{etc}, 
+		content=#{content}, mainImage=#{mainImage}, thumbImg=#{thumbImg} WHERE num = #{num}
+	</update>
+    <insert id="insert">
+        INSERT INTO animal(name, age, gender, area, protect_date, color, kind1, kind2, 
+        kind3, weight, inoculation, etc, content, state, mainImage, thumbImg) 
+        VALUES(#{name}, #{age}, #{gender}, #{area}, #{protect_date}, #{color}, #{kind1}, 
+        #{kind2}, #{kind3}, #{weight}, #{inoculation}, #{etc}, #{content}, "분양대기중", #{mainImage}, #{thumbImg})
+    </insert>
+</mapper>

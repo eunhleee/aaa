@@ -16,4 +16,8 @@ public interface RequestService {
 	public int getRequestListCnt() throws Exception;
 	public int getMyRequestListCnt(String id) throws Exception;
 	public List<Integer> myList(String id) throws Exception;
+	public void addComment(RequestDTO dto);
+	public List<RequestDTO> selectRequestNum(RequestDTO dto);
+	public void deleteComment(int conum);
+	public void modifyComment(RequestDTO dto);
 }

@@ -42,6 +42,19 @@
 	<select id="getMyRequestListCnt" resultType="int">
 		SELECT count(*) as listCnt FROM request where id=#{id}
 	</select>
+	
+	<insert id="addComment">
+		INSERT requestComment(articleNum,writer,comment,codate) values(#{num},#{writer},#{comment},#{codate})
+	</insert>
+	<select id="selectRequestNum" resultType="com.cos.domain.RequestDTO">
+		select * from requestComment where articleNum=#{num}
+	</select>
+	<delete id="deleteComment">
+		delete from requestComment where conum=#{conum}
+	</delete>
+	<update id="modifyComment">
+		update requestComment set comment=#{comment},codate=#{codate} where conum=#{conum}
+	</update>
 </mapper>
 
     

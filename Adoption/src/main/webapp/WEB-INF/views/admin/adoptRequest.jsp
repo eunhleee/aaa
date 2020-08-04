@@ -78,7 +78,7 @@
 									<div class="icon">
 										<i class="fa fa-map-marker" aria-hidden="true"></i>
 									</div>
-									<p>3919 New Cut Rd, Mary land, United State.</p>
+									<p>부산광역시 부산진구 부전2동 중앙대로 708.</p>
 								</div>
 
 								<!-- Single Contact Info -->
@@ -86,7 +86,7 @@
 									<div class="icon">
 										<i class="fa fa-phone" aria-hidden="true"></i>
 									</div>
-									<p>(12)-100-100-100</p>
+									<p>Tel.(051)753-5600</p>
 								</div>
 
 								<!-- Single Contact Info -->
@@ -94,18 +94,10 @@
 									<div class="icon">
 										<i class="fa fa-print" aria-hidden="true"></i>
 									</div>
-									<p>(12)-112-123-123</p>
+									<p>Fax.(051)753-5117</p>
 								</div>
 
-								<!-- Single Contact Info -->
-								<div class="single-contact-info d-flex">
-									<div class="icon">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</div>
-									<p>deercreative@gmail.com</p>
-								</div>
-
-								<!-- Contact Social Info -->
+															<!-- Contact Social Info -->
 								<div class="contact-social-info mt-50">
 									<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#" data-toggle="tooltip" data-placement="top"
 										title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"

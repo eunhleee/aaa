@@ -28,7 +28,9 @@ public class AdminController {
 		model.addAttribute("ctg1", ctService.selectGubun1(1));
 		model.addAttribute("ctg2", ctService.selectGubun1(2));
 		model.addAttribute("ctg3", ctService.selectGubun1(3));
-		model.addAttribute("ctg4", ctService.selectGubun1(4));
+		model.addAttribute("ctg4", ctService.selectGubun2(1));
+		model.addAttribute("ctg5", ctService.selectGubun2(2));
+		model.addAttribute("ctg6", ctService.selectGubun2(3));
 		return "admin/adminContact";
 	}
 	@RequestMapping(value = "/mailSend", method = RequestMethod.POST)

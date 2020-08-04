@@ -6,7 +6,7 @@ import lombok.Data;
 public class CategoryVO {
 	private int ctNum;
 	private int ctGubun1;
-	private String ctGubun2;
-	private String ctWriteDate;
-	private String userID; //FK -> user table
+	private int ctGubun2;
+	private String ctGubun3;
+	private String newGubun3;
 }

@@ -5,9 +5,22 @@
 
 <mapper namespace="com.cos.domain.category">
 	<select id="selectGubun1" resultType="com.cos.domain.CategoryVO">
-		SELECT * FROM category WHERE ctGubun1 = #{ctGubun1}
+		SELECT * FROM category WHERE ctGubun2 = #{ctGubun2} and ctGubun1 = 1
+	</select>
+	<select id="selectGubun2" resultType="com.cos.domain.CategoryVO">
+		SELECT * FROM category WHERE ctGubun2 = #{ctGubun2} and ctGubun1 = 2
 	</select>
 	<insert id="insert">
-		INSERT INTO category(ctGubun1, ctGubun2, ctWriteDate, userID) VALUES(#{ctGubun1}, #{ctGubun2}, now(), "admin")
+		INSERT INTO category(ctGubun1, ctGubun2, ctGubun3) VALUES(#{ctGubun1}, #{ctGubun2}, #{ctGubun3})
 	</insert>
+	<select id="categorySelect" resultType="com.cos.domain.CategoryVO">
+		SELECT ctGubun3 FROM category WHERE ctGubun1=#{kind1} AND ctGubun2=#{kind2};
+	</select>
+	<update id="update">
+		UPDATE category SET ctGubun3=#{newGubun3} where ctGubun1=#{ctGubun1} and 
+		ctGubun2=#{ctGubun2} and ctGubun3=#{ctGubun3}
+	</update>
+	<delete id="delete">
+		DELETE FROM category WHERE ctNum = #{ctNum}
+	</delete>
 </mapper>

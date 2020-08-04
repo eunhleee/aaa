@@ -1,10 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  
- <%@include file="../include/header.jsp"%>
-
- 
-<section class="readSection">
+ <%@include file="../mypage/myPage.jsp" %>
+<!-- <section class="readSection"> -->
+<div class="mPpage">
  	<div class="listTable" align="center">
   	<div class="readReqTable">
 		<table class="table table-hover" >
@@ -28,6 +27,14 @@
 		</table>
 	</div>
 </div>
-</section>
+<!-- </section> -->
+</div>
+
+
+
+
+</div>
 
 <%@include file="../include/footer.jsp"%>
+</body>
+</html>

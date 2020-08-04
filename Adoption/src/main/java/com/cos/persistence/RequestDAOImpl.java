@@ -72,4 +72,28 @@ public class RequestDAOImpl implements RequestDAO{
 		return session.selectList(namespace+".myList",id);
 	}
 
+	@Override
+	public void addComment(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		session.insert(namespace+".addComment",dto);
+	}
+
+	@Override
+	public List<RequestDTO> selectRequestNum(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		return session.selectList(namespace+".selectRequestNum",dto);
+	}
+
+	@Override
+	public void deleteComment(int conum) {
+		// TODO Auto-generated method stub
+		session.delete(namespace+".deleteComment",conum);
+	}
+
+	@Override
+	public void modifyComment(RequestDTO dto) {
+		// TODO Auto-generated method stub
+		session.update(namespace+".modifyComment",dto);
+	}
+
 }

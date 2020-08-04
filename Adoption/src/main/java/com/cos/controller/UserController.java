@@ -32,7 +32,9 @@ public class UserController {
 		model.addAttribute("ctg1", ctService.selectGubun1(1));
 		model.addAttribute("ctg2", ctService.selectGubun1(2));
 		model.addAttribute("ctg3", ctService.selectGubun1(3));
-		model.addAttribute("ctg4", ctService.selectGubun1(4));
+		model.addAttribute("ctg4", ctService.selectGubun2(1));
+		model.addAttribute("ctg5", ctService.selectGubun2(2));
+		model.addAttribute("ctg6", ctService.selectGubun2(3));
 		return "user/userLoginForm";
 	}
 	
@@ -41,7 +43,9 @@ public class UserController {
 		model.addAttribute("ctg1", ctService.selectGubun1(1));
 		model.addAttribute("ctg2", ctService.selectGubun1(2));
 		model.addAttribute("ctg3", ctService.selectGubun1(3));
-		model.addAttribute("ctg4", ctService.selectGubun1(4));
+		model.addAttribute("ctg4", ctService.selectGubun2(1));
+		model.addAttribute("ctg5", ctService.selectGubun2(2));
+		model.addAttribute("ctg6", ctService.selectGubun2(3));
 		return "user/userJoinForm";
 	}
 	
@@ -87,6 +91,7 @@ public class UserController {
 	public String checkPw(@RequestParam("checkPwText") String chkPw,
 			@RequestParam("userID") String userID,
 			@RequestParam("pageValue") String pageValue,HttpServletRequest req,Model model) throws Exception {
+		
 		UserVO user=userService.select(userID);
 		if(user.getPw().equals(chkPw)) {
 			if(pageValue.equals("checkPw")) {
@@ -105,7 +110,13 @@ public class UserController {
 		else {
 			HttpSession session = req.getSession();
 			session.setAttribute("warning", "*비밀번호가 일치하지 않습니다.");
-			return "redirect:"+pageValue;
+			if(pageValue.equals("checkPw")) {
+				
+				return "mypage/checkPw";
+			}
+			else {
+				return "mypage/secession";
+			}
 		}
 	}
 	
